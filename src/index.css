@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Regular";
+    src: local("GeneralSans-Regular.ttf"),
+    url("./fonts/GeneralSans-Regular.ttf") format("truetype");
+}
