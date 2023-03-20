@@ -63,7 +63,7 @@ const Lists = () => {
     }
 
     return (
-        <div className="p-12 h-70 pt-52 m2">
+        <div className="p-12 h-70 pt-52">
             <div className="m-auto grid grid-cols-4 gap-4">
                 {homes && homes.map((home, index) => (
                     <Link to={`/homes/${home.id}`}>
