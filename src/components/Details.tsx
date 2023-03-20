@@ -23,26 +23,6 @@ const Details = () => {
         )
     }), [])
 
-    // useEffect(() => {
-    //     const fetchHomeData = async () => {
-    //         const docSnap = await getDoc(getHotel)
-    //         if (docSnap.exists()) {
-    //             const newHotelObj = {
-    //                 id: docSnap.id,
-    //                 ...docSnap.data()
-    //             }
-    //             setHome(newHotelObj)
-    //         } else {
-    //             console.log("No such document")
-    //         }
-    //     }
-    //     fetchHomeData()
-    // }, [])
-
-    console.log(id, "id")
-    console.log(homes)
-
-
     const values = Object.values(homes)
     console.log(values)
 
