@@ -27,7 +27,7 @@ const Navbar = () => {
                             <p className="m-auto">🌐</p>
                         </div>
                         <div className="m-4">
-                            <div className="flex flex-row border rounded-full p-4 gap-1">🍔 Profile</div>
+                            <div className="flex flex-row border rounded-full p-4 gap-1">🍔 👨🏿‍💻</div>
                         </div>
                     </div>
                 </div>
