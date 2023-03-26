@@ -48,24 +48,24 @@ const Details = () => {
             <div className="text-[30px] mb-7">{homes[0].title}</div>
             <div className="flex flex-row gap-2">
                 <div className="text-sm mt-[-13px] mb-7">{homes[0].stars} stars • </div>
-                <div className="text-sm mt-[-13px] mb-7">{homes[0].review} reviews • </div>
-                <div className="text-sm mt-[-13px] mb-7">{homes[0].country}</div>
+                <div className="text-sm mt-[-13px] underline mb-7">{homes[0].review} reviews • </div>
+                <div className="text-sm mt-[-13px] underline mb-7">{homes[0].country}</div>
             </div>
             <div className="h-[396.89px] flex items-center justify-center bg-gray-300 rounded-[15px] dark:bg-gray-700">
                 <img className="h-full rounded-[15px] w-full" src={homes[0].location} alt={homes[0].title} />
             </div>
-            <div className="flex flex-row mt-12">
+            <div className="flex flex-col md:flex-row xl:flex-row mt-12">
                 <div className="flex flex-col w-8/12">
                     <div className="text-[30px]">{homes[0].title}</div>
                     <div className="text-sm mt-7">{homes[0].description}</div>
                 </div>
-                <div className="m-auto flex flex-col  w-[398px] h-[496px] bg-white border rounded-xl p-6">
-                    <div className="flex flex-row gap-2">
-                        <h1 className="text-2xl mt-[-13px] mb-7">${homes[0].totalPrice}</h1>
-                        <div className="text-sm mt-[-13px] mb-7">{homes[0].stars} stars • </div>
-                        <div className="text-sm text-neutral-600 underline mt-[-13px] mb-7">{homes[0].review} reviews</div>
+                <div className="m-auto flex flex-col w-[398px] h-[496px] bg-white border rounded-xl p-6">
+                    <div className="flex flex-row gap-2 p-2">
+                        <h1 className="text-2xl mr-10 auto">${homes[0].totalPrice}</h1>
+                        <div className="text-sm">{homes[0].stars} stars • </div>
+                        <div className="text-sm text-neutral-600 underline auto">{homes[0].review} reviews</div>
                     </div>
-                    <div className="w-[350px] h-[129px] rounded-[10px] border"></div>
+                    <div className="w-[350px] h-[129px] rounded-[10px] border mt-7"></div>
                     <button className="w-[350px] h-[52px] bg-[#FF5A5F] rounded-[10px] text-white mt-7">Reserve</button>
                 </div>
             </div>
