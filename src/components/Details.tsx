@@ -57,7 +57,16 @@ const Details = () => {
             <div className="flex flex-col md:flex-row xl:flex-row mt-12">
                 <div className="flex flex-col w-8/12">
                     <div className="text-[30px]">{homes[0].title}</div>
-                    <div className="text-sm mt-7">{homes[0].description}</div>
+                    <div className="text-sm mt-4 w-full">{homes[0].description}</div>
+                    <div className="mt-14">
+                        <h1 className="text-[30px] font-medium">What this place offers</h1>
+                        <div className="mt-7 grid grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-3">
+                            <div className="flex flex-row gap-2 w-full">
+                                <div>🎉</div>
+                                <div>{homes[0].feature}</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="m-auto flex flex-col w-[398px] h-[496px] bg-white border rounded-xl p-6">
                     <div className="flex flex-row gap-2 p-2">
