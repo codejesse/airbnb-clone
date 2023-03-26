@@ -74,7 +74,7 @@ const Details = () => {
                         <div className="text-sm">{homes[0].stars} stars • </div>
                         <div className="text-sm text-neutral-600 underline auto">{homes[0].review} reviews</div>
                     </div>
-                    <div className="w-[350px] h-[129px] rounded-[10px] border mt-7"></div>
+                    <div className="w-80 h-[129px] rounded-[10px] border mt-7"></div>
                     <button className="w-[350px] h-[52px] bg-[#FF5A5F] rounded-[10px] text-white mt-7">Reserve</button>
                 </div>
             </div>
