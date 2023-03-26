@@ -47,14 +47,20 @@ const Details = () => {
         <div className="mt-[200px] m-12">
             <div className="text-[30px] mb-7">{homes[0].title}</div>
             <div className="flex flex-row gap-2">
+                <div className="text-sm mt-[-13px] mb-7">{homes[0].stars} stars • </div>
                 <div className="text-sm mt-[-13px] mb-7">{homes[0].review} reviews • </div>
                 <div className="text-sm mt-[-13px] mb-7">{homes[0].country}</div>
             </div>
             <div className="h-[396.89px] flex items-center justify-center bg-gray-300 rounded-[15px] dark:bg-gray-700">
                 <img className="h-full rounded-[15px] w-full" src={homes[0].location} alt={homes[0].title} />
             </div>
-            <div className="text-lg">{homes[0].title}</div>
-            <div className="text-sm">{homes[0].description}</div>
+            <div className="flex flex-row mt-12 border">
+                <div className="flex flex-col">
+                    <div className="text-[30px]">{homes[0].title}</div>
+                    <div className="text-sm mt-7">{homes[0].description}</div>
+                </div>
+                <div className="m-auto w-[398px] h-[496px] bg-white border rounded-xl"></div>
+            </div>
         </div>
     );
 }

@@ -75,7 +75,7 @@ const Lists = () => {
                             </div>
                             <p className="mt-4">{home.title}</p>
                             <p className="text-sm text-[#666666]">3,123 kilometers, away</p>
-                            <p>$ {home.perNight}</p>
+                            <p className="text-sm">$ {home.perNight} night</p>
                         </div>
                     </Link>
                 ))}
