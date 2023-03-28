@@ -64,7 +64,7 @@ const Lists = () => {
 
     return (
         // <div className="container mx-auto h-70 pt-52">
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 pt-52 m-8">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-52 m-8">
                 {homes && homes.map((home, index) => (
                     <Link to={`/homes/${home.id}`} key={index}>
                         <div className="m-auto" key={index}>
