@@ -68,14 +68,14 @@ const Details = () => {
                         </div>
                     </div>
                 </div>
-                <div className="m-auto flex flex-col w-[398px] h-[496px] bg-white border rounded-xl p-6">
+                <div className="m-auto flex flex-col w-full md:w-[398px] h-[496px] bg-white border rounded-xl p-6">
                     <div className="flex flex-row gap-2 p-2">
                         <h1 className="text-2xl mr-10 auto">${homes[0].totalPrice}</h1>
                         <div className="text-sm">{homes[0].stars} stars • </div>
                         <div className="text-sm text-neutral-600 underline auto">{homes[0].review} reviews</div>
                     </div>
-                    <div className="w-80 h-[129px] rounded-[10px] border mt-7"></div>
-                    <button className="w-[350px] h-[52px] bg-[#FF5A5F] rounded-[10px] text-white mt-7">Reserve</button>
+                    <div className="w-full h-[129px] rounded-[10px] border mt-7"></div>
+                    <button className="w-full h-[52px] bg-[#FF5A5F] rounded-[10px] text-white mt-7">Reserve</button>
                 </div>
             </div>
         </div>
