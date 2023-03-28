@@ -63,13 +63,13 @@ const Lists = () => {
     }
 
     return (
-        <div className="container mx-auto h-70 pt-52">
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        // <div className="container mx-auto h-70 pt-52">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 pt-52 m-8">
                 {homes && homes.map((home, index) => (
-                    <Link to={`/homes/${home.id}`}>
+                    <Link to={`/homes/${home.id}`} key={index}>
                         <div className="m-auto" key={index}>
-                            <div className="w-[302px] h-[286.89px] rounded-[15px] border bg-neutral-100">
-                                <div className="w-full h-full">
+                            <div className="w-full h-[286.89px] rounded-[15px] border bg-neutral-100">
+                                <div className="w-full h-[286.89px]">
                                     <img className="w-full h-full rounded-[15px]" src={home.location} alt={home.title} />
                                 </div>
                             </div>
@@ -80,7 +80,7 @@ const Lists = () => {
                     </Link>
                 ))}
             </div>
-        </div>
+        // </div>
     );
 }
 

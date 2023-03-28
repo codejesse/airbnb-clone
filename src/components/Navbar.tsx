@@ -1,6 +1,5 @@
 import navLogo from "../assets/airbnb-logo.png"
 import "../fonts/GeneralSans-Regular.ttf"
-import Lists from "./Lists";
 import Options from "./Options";
 
 //here will create the logic for the onClick function to expand the search bar
