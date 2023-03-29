@@ -1,3 +1,4 @@
+import { Global, HambergerMenu, ProfileCircle, SearchNormal1 } from "iconsax-react";
 import navLogo from "../assets/airbnb-logo.png"
 import "../fonts/GeneralSans-Regular.ttf"
 import Options from "./Options";
@@ -18,15 +19,17 @@ const Navbar = () => {
                             <input className="border border-[#D5D5D5]-100 hover:shadow-sm transition ease-in-out delay-100 cursor-pointer bg-white h-[50px] shadow-lg w-full xl:w-[360px] sm:w-full px-5 pr-16 rounded-full text-sm focus:outline-none"
                                 type="search" name="search" placeholder="Search">
                             </input>
+                            <button type="submit" className="text-white absolute right-2.5 bottom-2.5 w-8 h-8 bg-[#FF5A5F] hover:bg-[#FF5A5F] font-medium rounded-full text-sm px-2 py-2"><SearchNormal1 size={18} style={{margin: "auto", marginRight: "-1px"}} /></button>
                         </div>
                     </div>
                     <div className="hidden xl:flex md:flex lg:flex pr-7 flex flex-row">
                         <div className="flex flex-row gap-1 m-auto">
                             <p className="text-sm">Airbnb your home</p>
-                            <p className="m-auto">🌐</p>
+                            <p className="m-auto"><Global style={{ width: "18px" }} /></p>
                         </div>
                         <div className="m-4">
-                            <div className="flex flex-row border rounded-full p-4 gap-1">🍔 👨🏿‍💻</div>
+                            <div className="flex flex-row border rounded-full p-3 gap-1 m-auto"><HambergerMenu style={{margin: "auto"}}  /> <ProfileCircle style={{margin: "auto"}} size={32} color="#D5D5D5"
+                                variant="Bulk" /></div>
                         </div>
                     </div>
                 </div>
