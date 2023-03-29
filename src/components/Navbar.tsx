@@ -10,17 +10,17 @@ const Navbar = () => {
         <div className="relative z-[100] overflow-hidden">
             <div className="fixed w-full bg-white">
                 <div className="flex flex-row border-b border-slate-100 w-full h-[90px] m-auto z-50">
-                    <div className="w[15px] m-4 pl-5">
+                    <div className="hidden md:block xl:block lg:block sm:hidden m-4 pl-5">
                         <img className="w-full" src={navLogo} alt="nav-logo" />
                     </div>
                     <div className="m-auto pl-16">
                         <div className="relative mx-auto text-gray-600">
-                            <input className="border border-[#D5D5D5]-100 hover:shadow-sm transition ease-in-out delay-100 cursor-pointer bg-white h-[50px] shadow-lg w-full xl:w-[360px] px-5 pr-16 rounded-full text-sm focus:outline-none"
+                            <input className="border border-[#D5D5D5]-100 hover:shadow-sm transition ease-in-out delay-100 cursor-pointer bg-white h-[50px] shadow-lg w-full xl:w-[360px] sm:w-full px-5 pr-16 rounded-full text-sm focus:outline-none"
                                 type="search" name="search" placeholder="Search">
                             </input>
                         </div>
                     </div>
-                    <div className="pr-7 flex flex-row">
+                    <div className="hidden xl:flex md:flex lg:flex pr-7 flex flex-row">
                         <div className="flex flex-row gap-1 m-auto">
                             <p className="text-sm">Airbnb your home</p>
                             <p className="m-auto">🌐</p>

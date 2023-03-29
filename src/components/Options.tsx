@@ -44,7 +44,7 @@ const Options: React.FC = () => {
                 */}
                 <div className="w-full p-7 flex flex-row border">
                     <div className='flex flex-row m-auto'>
-                        <button className="w-10 h-10 bg-white rounded-full border m-auto" onClick={movePrev}>Prev</button>
+                        <button className={`w-10 h-10 bg-white rounded-full border m-auto ${currentIndex > 0 ? "block" : "hidden"}`} onClick={movePrev}>Prev</button>
                     </div>
                     <div ref={carousel} className="carousel-container relative flex gap-5 w-full h-full overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0 ml-7">
                         <p className='mr-7'>item</p>

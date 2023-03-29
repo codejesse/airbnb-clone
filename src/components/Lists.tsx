@@ -63,24 +63,22 @@ const Lists = () => {
     }
 
     return (
-        // <div className="container mx-auto h-70 pt-52">
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-52 m-8">
-                {homes && homes.map((home, index) => (
-                    <Link to={`/homes/${home.id}`} key={index}>
-                        <div className="m-auto" key={index}>
-                            <div className="w-full h-[286.89px] rounded-[15px] border bg-neutral-100">
-                                <div className="w-full h-[286.89px]">
-                                    <img className="w-full h-full rounded-[15px]" src={home.location} alt={home.title} />
-                                </div>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-52 m-8">
+            {homes && homes.map((home, index) => (
+                <Link to={`/homes/${home.id}`} key={index}>
+                    <div className="m-auto" key={index}>
+                        <div className="w-full h-[286.89px] rounded-[15px] border bg-neutral-100">
+                            <div className="w-full h-[286.89px]">
+                                <img className="w-full h-full rounded-[15px]" src={home.location} alt={home.title} />
                             </div>
-                            <p className="mt-4">{home.title}</p>
-                            <p className="text-sm text-[#666666]">3,123 kilometers, away</p>
-                            <p className="text-sm">$ {home.perNight} night</p>
                         </div>
-                    </Link>
-                ))}
-            </div>
-        // </div>
+                        <p className="mt-4">{home.title}</p>
+                        <p className="text-sm text-[#666666]">3,123 kilometers, away</p>
+                        <p className="text-sm">$ {home.perNight} night</p>
+                    </div>
+                </Link>
+            ))}
+        </div>
     );
 }
 
